@@ -33,7 +33,7 @@ To change the compression format to Gzip, go to `Map > Map Properties...` and ch
 
 The project should be structured like this:
 
-![The project structure.](doc\project_structure.png)
+![The project structure.](doc/project_structure.png)
 
 The actual order of the groups and root layers in the project does not matter, and the background and foreground groups are optional.
 All other groups are ignored.
