@@ -97,7 +97,7 @@ Each object's width and height have a default value of 32 if not specified.
 - A shockey going under the level.
 - Getting in range of a water object of area less than 7.
 - Lives, for some reason.
-- 
+
 This section needs more research.
 
 ## Compilation
