@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="100" height="15" tilewidth="32" tileheight="32" infinite="0" nextlayerid="8" nextobjectid="15">
+ <tileset firstgid="1" name="tileset2" tilewidth="32" tileheight="32" tilecount="256" columns="16">
+  <image source="../../../../../Program Files (x86)/Steam/steamapps/common/Bounce On/Content/Textures/Tilesets/tileset2.png" width="512" height="512"/>
+ </tileset>
+ <tileset firstgid="257" name="tileset1" tilewidth="32" tileheight="32" tilecount="256" columns="16">
+  <image source="../../../../../Program Files (x86)/Steam/steamapps/common/Bounce On/Content/Textures/Tilesets/tileset1.png" width="512" height="512"/>
+ </tileset>
+ <objectgroup id="6" name="Object Layer 1">
+  <object id="2" name="sign" x="1568" y="256">
+   <properties>
+    <property name="text" value="This level has no exit cannon."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="3" name="walker" x="1152" y="64">
+   <point/>
+  </object>
+  <object id="4" name="worm" x="960" y="192">
+   <point/>
+  </object>
+  <object id="5" name="spikey" x="672" y="256">
+   <point/>
+  </object>
+  <object id="7" name="start" x="192" y="224" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="8" x="128" y="64" width="320" height="160">
+   <text fontfamily="Segoe UI" pixelsize="20" wrap="1">One may use any shape for any object type. Objects with an unspecified size default to 32x32.</text>
+  </object>
+  <object id="9" name="spike" x="320" y="224" width="160" height="32"/>
+  <object id="10" name="wiffle" x="2144" y="288">
+   <point/>
+  </object>
+  <object id="11" name="checkpoint" x="1792" y="256">
+   <point/>
+  </object>
+  <object id="12" name="water" x="2528" y="288" width="96" height="192"/>
+  <object id="14" name="ice" x="2208" y="288" width="320" height="32"/>
+ </objectgroup>
+ <group id="3" name="background">
+  <layer id="1" name="Tile Layer 1" width="100" height="15">
+   <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu2TS07CUBhGe5fiElgCi3IjDkBkhgkv5/Kai48pb6agUqYqKg48TTS5KaXtvdSG1P8kJzTkT5p8J3UcISsUlOMU8RxLeIFlZX4jJEOVXWtYxwY28UqZ33jk+O/kx7z0suKa3VrYxg52safMb7wWpz6liTk3bNbHW7zDe3xQZjdBLaSJPVM2m+E8Yrugm7AWQU0GPA9xhGOcSK8dVmzi4jpiG/9NnBb+Jgt+l/iIT/gsPXb4YJNP3OJXyD7692HSQm/ygq/4hht8/0c9Khab7fNS+4ZsWpi8J8sktZPH7/fxVy30d2WVJDdyU2ghPeJvdCY9DkZ6HBfS47iQHunzDc24bThwFwAA
+  </data>
+  </layer>
+  <layer id="7" name="Tile Layer 3" width="100" height="15">
+   <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu2VSwqDMABEk8PUvSDtybyIvYFeqbUeQK0H8LfsFC0W15pMYB48sgsT3iLGCCGEEMIXuTWmsL5XLDyw4wlL+IIVyS6XZHjzneTdNXY0sIVv2JHscglDj5td7OEARzjBed11wRkdvDH5u+9K1J2hh9gIsUfseO/3j01Pcv93h9bDdYsfZ/XYE1oPX6gHF+rBhXpwEVqPD37ew7VwFwAA
+  </data>
+  </layer>
+ </group>
+ <group id="2" name="collision">
+  <layer id="4" name="Tile Layer 2" width="100" height="15">
+   <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu2UywrCMBBFM4oPXCvoXgv6CfpnutWN7nz8r7dgIJSEaXTSGDoHhqZpyaRzOjFGUZR/Z0TGjBETxJRy76bfzFH/heNgifFKnWShdrH21H6bwcmMwsExxDuDwv+hkAuLtJMj1joRP9dHOBcWSSdXrHMjfq5vNF2cMb4wfbJLULOSeqM+D0ko3HPV1xdP3L88dXE97XE9RORpssGzquDeuAvu8/FZq+0ZZQl54vJYJP8pX3SJtI9YF9/mcZH8Bi5XaqR9pHZh87ioDz9d7V19tEN9/I76iMslxRviBWxkcBcAAA==
+  </data>
+  </layer>
+ </group>
+</map>

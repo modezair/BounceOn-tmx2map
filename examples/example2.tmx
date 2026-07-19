@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="300" height="15" tilewidth="32" tileheight="32" infinite="0" nextlayerid="12" nextobjectid="248">
+ <tileset firstgid="1" name="tileset1" tilewidth="32" tileheight="32" tilecount="256" columns="16">
+  <image source="../../../../../Program Files (x86)/Steam/steamapps/common/Bounce On/Content/Textures/Tilesets/tileset1.png" width="512" height="512"/>
+ </tileset>
+ <group id="2" name="background">
+  <layer id="11" name="back" width="300" height="15">
+   <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3Zu04CQQBGYZ4NLfGSQImXp1LQHrz0ItIDQgtioFUk0iJaeh6AkIFkMpA9X3K6TeavNpPdXC6eK7qmClXphm4jnidJ26pRne7onh7oMcGOPB3QYYKzJe2HJ2rQMzXphVqJthSplOhsSbuvTR3q0iv1qJ90kSStN6ZJ6hGSFOCb5gHPDWhIbzSi95ijJGmF0PvVB33SlL5oFnPUHijQER3TCZ2mnSNlQuj9akE/tKRf+os5aoVd+49YpjM6pwu6TLpGyoYY369ivVv8jyhlW+j9alO+WyRJkiRJkiRJkqTN/ANpzFvJUEYAAA==
+  </data>
+  </layer>
+  <layer id="6" name="background" width="300" height="15">
+   <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3Y0Q2DIBRAUVZghI7gCA7VSTpCF618kBACD0SeULkneT+N0RrjjWAMAAAAAADPsB3zOuadGPf7Pu6vAfgzvica7XDnTnUqHKtwXQDPk+qJ1I4zbatple9V6boA1ib1JNWO+Hjpu6i2VWdaCWBNNT3ZC8dbk25Wa6tKrQz3wNj3AtZwtSdSs3qdu9TKlu8xad+/degmoKdnq1JrQ6t0/qvd0Lrvlm4CKNN+Z/231oheSd3Qvm+ahVXZaHqtN+56Z2eY2rUkzQKuiXuV29MOaezLMPePe4bhM/8aYG65XuWatZnxazCmz8TP+2OAuUm9ipu1Bb+PfteY/s2iV5jdD2mwZ7JQRgAA
+  </data>
+  </layer>
+ </group>
+ <group id="3" name="collision">
+  <layer id="10" name="override" width="300" height="15">
+   <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3UwQnAMAwDwAzRRdNRmg3SResB/C2x4Q4EeuqlMQAA+NOOvEkHqOaJrKQDVOOvgC78FdDFjNxJBwAAgCqu0wMAAAAAAACgmQ9sirSoUEYAAA==
+  </data>
+  </layer>
+  <layer id="9" name="main" width="300" height="15">
+   <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3bwWrCQBDG8Vix7QMo2Gvbg9Wb3vT938sJdCGE3ezsZsZE8//BgIUlmxz2IzPapgEAAICntdRb5DMAwN5G6l1qFakPqc/pbg3Akwl54pEdW6ldZs1e6st4XwDzcfivsfp5ksuOkmzTZJV2XwDLlsqTVHaUZFtJVmmuB2C5cnnyJ3Xs/P0j9RtZF8uYmqwaul6rPwNj7gUsgzZPrlI3qbPUZWBdN2PGZFUQsvIk9d2ks7KfqTlDc//aIjcBPxZ5EhMyS3vt3BxMm5VhXS43vJ67RR8L2PM8sy3tuS2d8Y/d3/u5h/YGXplXv5Hqqazlzm3pjH/s/o/IqqC0PwVekfY3BqkZS66nslb7nmN13rW9pIewt8VsjP9lwNyl3q2m7HVq1L7naM77XGbc1vP7uTwXUKt77qfsdWqE+/W4z6nnRd7fWwDP4A5MyqKdUEYAAA==
+  </data>
+  </layer>
+ </group>
+ <group id="4" name="foreground">
+  <layer id="7" name="foreground" width="300" height="15">
+   <data encoding="base64" compression="gzip">
+   H4sIAAAAAAAACu3ZuQ0CQRBE0c0KbC4DTEgP2AQ4EuAIjbIQHgaIHrHvSd8vq42ZrgMAgPfmaZHG1UOAv+CWAAAA0KplWlWPAPihUfUAYLD8FQB8bpt2aZ/62inQlEmapln1EJ4O6ZhO6Vy8BVqzTpvqEQP3+j52Sdd0S/eSNQAAAADf8wBghZS3UEYAAA==
+  </data>
+  </layer>
+ </group>
+ <objectgroup id="5" name="objects">
+  <object id="1" name="start" x="64" y="288" width="32" height="32"/>
+  <object id="10" name="spike" x="2624" y="352" width="32" height="32"/>
+  <object id="12" name="exit" x="4064" y="352" width="32" height="32"/>
+  <object id="13" name="cannon" x="1824" y="64" width="32" height="32"/>
+  <object id="15" name="spikey" x="2944" y="224" width="32" height="32"/>
+  <object id="16" name="spikey" x="3072" y="224" width="32" height="32"/>
+  <object id="17" name="spikey" x="3200" y="224" width="32" height="32"/>
+  <object id="18" name="hatwalker" x="864" y="128" width="32" height="32"/>
+  <object id="19" name="worm" x="1184" y="224" width="32" height="32"/>
+  <object id="20" name="maskwalker" x="1472" y="160" width="32" height="32"/>
+  <object id="21" name="spikey" x="640" y="320" width="32" height="32"/>
+  <object id="22" name="snowman" x="512" y="352" width="32" height="32"/>
+  <object id="26" name="spike" x="2656" y="352" width="32" height="32"/>
+  <object id="29" name="jumper" x="3648" y="320" width="32" height="32"/>
+  <object id="31" name="sign" x="3872" y="352" width="32" height="32">
+   <properties>
+    <property name="text" value="Hope you had fun!"/>
+   </properties>
+  </object>
+  <object id="32" name="sign" x="480" y="352" width="32" height="32">
+   <properties>
+    <property name="text" value="level design is my passion"/>
+   </properties>
+  </object>
+  <object id="33" name="metal" x="2848" y="224" width="32" height="32"/>
+  <object id="34" name="spikey" x="3008" y="224" width="32" height="32"/>
+  <object id="35" name="spikey" x="3136" y="224" width="32" height="32"/>
+  <object id="36" name="checkpoint" x="1312" y="96" width="32" height="32"/>
+  <object id="74" name="life" x="1600" y="32" width="32" height="32"/>
+  <object id="75" name="block" x="1056" y="96" width="32" height="32"/>
+  <object id="76" name="block" x="576" y="160" width="32" height="32"/>
+  <object id="78" name="block" x="1536" y="96" width="32" height="32"/>
+  <object id="79" name="arrow" x="2368" y="192" width="32" height="32">
+   <properties>
+    <property name="angle" type="int" value="100"/>
+   </properties>
+  </object>
+  <object id="83" name="barrier" x="224" y="384" width="32" height="32"/>
+  <object id="84" name="spider" x="2112" y="96" width="32" height="32"/>
+  <object id="85" name="secret" x="1920" y="64" width="32" height="32"/>
+  <object id="89" name="seesaw" x="224" y="288" width="192" height="32"/>
+  <object id="103" name="water" x="704" y="160" width="192" height="64"/>
+  <object id="104" name="water" x="992" y="64" width="160" height="64"/>
+  <object id="105" name="water" x="1248" y="0" width="128" height="64"/>
+  <object id="106" name="water" x="1728" y="-32" width="96" height="96"/>
+  <object id="124" name="fall" x="480" y="32" width="224" height="32"/>
+  <object id="126" name="speed" x="128" y="320" width="32" height="32"/>
+  <object id="246" name="shooter" x="320" y="192" width="64" height="32"/>
+  <object id="247" name="ice" x="0" y="352" width="160" height="32"/>
+ </objectgroup>
+</map>
