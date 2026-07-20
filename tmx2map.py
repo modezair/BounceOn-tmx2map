@@ -55,7 +55,7 @@ class BOObject:
     realx2:int
     realy2:int
     extended:str
-    def __init__(self, lvlheight:int, tag:ET.Element[str]):
+    def __init__(self, lvlheight:int, tag:ET.Element):
         objwidth = tag.attrib.get('width')
         objheight = tag.attrib.get('height')
         self.realx1 = int(tag.attrib['x'])
@@ -137,7 +137,7 @@ class BOMap:
         self.fgdata = []
         self.objs = []
 
-def bo_layerdata(layername:str, layers:list[ET.Element[str]]):
+def bo_layerdata(layername:str, layers:list[ET.Element]):
     result = []
     for layer in layers:
         ldatasrc = layer.find('data')
