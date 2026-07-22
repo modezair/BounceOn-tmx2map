@@ -1,14 +1,13 @@
 # TMX2MAP
 A utility to convert Tiled projects into Bounce On MAP files.
 
-Current version: 1.0
+Current version: 1.0.1
 
 # Demonstration
 ![](doc/demo1.png)
 ![](doc/demo2.png)
 
 # TODO
-- Overworld support.
 - Other missing object types.
 - Platforms.
 - Parallax background images.
@@ -42,7 +41,7 @@ At least one collision layer is mandatory.
 Each layer inside each of these groups must be a tile layer; other layer types are ignored.
 Tile layers not in these groups and ALL other layer types are ignored.
 
-Any attempt to use tiles of index beyond 255 (or 127 for overworlds, not currently supported) will make the game crash on loading the level, with error `tileid XXXX not found in any loaded tileset`, where `XXXX` is the bad tile's ID in hexadecimal.
+Any attempt to use tiles of index beyond 255 (or 127 for overworlds) will make the game crash on loading the level, with error `tileid XXXX not found in any loaded tileset`, where `XXXX` is the bad tile's ID in hexadecimal.
 
 ## Objects
 Objects must be named after their types. Use points and rectangles.
@@ -67,11 +66,13 @@ magnet         |Magnet station
 bubble         |Bubble station
 speed          |Speed station
 fireball       |Revolves around its placed position
+level          |Level entry. Set class to "easy", "medium", "hard", or ("veryhard" or "very hard"). Add custom property "level" that tells which MAP file to load, without the .map extension. (examples: 1-1, 2-15, my_custom_level)
 cannon         |
 checkpoint     |
 sign           |Add custom property "text"
 exit           |The exit cannon
 life           |Broken.
+door           |Entry to the next world.
 seesaw         |
 brokenlight    |
 shockey        |Revolves around the terrain where it is placed
