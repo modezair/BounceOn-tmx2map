@@ -20,11 +20,13 @@ BO_OBJECT_IDS = {
     'bubble':       0x0B,
     'speed':        0x0C,
     'fireball':     0x0D,
+    'level':        0x0F,
     'cannon':       0x10,
     'checkpoint':   0x11,
     'sign':         0x12,
     'exit':         0x13,
     'life':         0x14,
+    'door':         0x15,
     'seesaw':       0x16,
     'brokenlight':  0x17,
     'shockey':      0x18,
@@ -41,6 +43,14 @@ BO_OBJECT_IDS = {
     'shooter':      0x2B,
     'snowman':      0x2D,
     'ice':          0x31,
+}
+
+BO_LEVEL_DIFFICULTIES = {
+    'easy': 1,
+    'medium': 2,
+    'hard': 3,
+    'veryhard': 4,
+    'very hard': 4,
 }
 
 class BOObject:
@@ -85,16 +95,28 @@ class BOObject:
             case 'maskwalker':
                 self.arg1 = 4
 
+            case 'level':
+                self.arg1 = BO_LEVEL_DIFFICULTIES.get(tag.attrib.get('type', 'easy'), 1)
+                props = tag.find("properties")
+                if props is None:
+                    return
+                proplevel = props.find("property")
+                if proplevel is None:
+                    return
+                if proplevel.attrib['name'] != 'level':
+                    return
+                self.extended = proplevel.attrib['value']
+
             case 'sign':
                 props = tag.find("properties")
                 if props is None:
                     return
-                propangle = props.find("property")
-                if propangle is None:
+                proptext = props.find("property")
+                if proptext is None:
                     return
-                if propangle.attrib['name'] != 'text':
+                if proptext.attrib['name'] != 'text':
                     return
-                self.extended = propangle.attrib['value']
+                self.extended = proptext.attrib['value']
 
             case 'arrow':
                 props = tag.find("properties")
