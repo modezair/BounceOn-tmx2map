@@ -79,7 +79,7 @@ shockey        |Revolves around the terrain where it is placed
 arrow          |Add custom property "angle". Rotates counter-clockwise. Angle 0 points to the right.
 evileyes       |
 water          |Add it as a rectangle, covering the desired area. Must have a minimum area of 7 tiles.
-spike          |Can be placed as a rectangle to create multiple spikes using one object. Single spike objects automatically adjust their orientation based on which side touches terrain; multiple spike objects don't.
+spike          |Can be placed as a rectangle to create multiple spikes using one object. Spike objects automatically adjust their orientation based on which side touches terrain.
 barrier        |Stops enemies from moving past it
 secret         |On contact, plays the secret area sound effect
 fall           |Falling block. Can be placed as a rectangle to create multiple using one object.
