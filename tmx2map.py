@@ -80,12 +80,16 @@ class BOObject:
         self.extended = ""
         if 'name' not in tag.attrib:
             self.objtype = -1
-            print(f"warning: ignored object with blank name of id {tag.attrib['id'] if 'id' in tag.attrib else "unknown"}")
+            text_unknown = "unknown"
+            text_id = "id"
+            print(f"warning: ignored object with blank name of id {tag.attrib.get(text_id, text_unknown)}")
             return
         name = tag.attrib['name'].lower().strip()
         if name not in BO_OBJECT_IDS:
             self.objtype = -1
-            print(f"warning: ignored unknown object name \'{name}\' of id {tag.attrib['id']}")
+            text_unknown = "unknown"
+            text_id = "id"
+            print(f"warning: ignored unknown object name \'{name}\' of id {tag.attrib.get(text_id, text_unknown)}")
             return
         else:
             self.objtype = BO_OBJECT_IDS[name]
